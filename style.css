@@ -208,7 +208,6 @@ body {
 /* About Section */
 .about {
   padding: 80px 20px;
-  /* background-color: #ffffff; */
   background: linear-gradient(to bottom, #076fe7 0%, #ffffff 10%);
   color: #333;
 }
@@ -298,7 +297,6 @@ body {
 
 .skills {
   padding: 80px 20px;
-  /* background-color: #f9f9f9; */
   background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 10%);
   color: #333;
   text-align: center;
@@ -384,7 +382,6 @@ body {
 
 .projects {
   padding: 80px 20px;
-  /* background-color: #f9f9f9; */
   background: linear-gradient(to bottom, #f5f7fa 0%, #f9f9f9 10%);
   text-align: center;
   color: #182848;
@@ -494,7 +491,6 @@ body {
 .education {
   padding: 80px 20px;
   background-color: #f9f9fb;
-  /* background: linear-gradient(to bottom, #ffffff 0%, #f9f9fb 10%); */
   color: #182848;
   max-width: 900px;
   margin: 0 auto;
@@ -605,7 +601,6 @@ body {
 
 .hire {
   padding: 50px 20px;
-  background-color: #fdfdfd;
   background: linear-gradient(to bottom, #f9f9fb 0%, #fdfdfd 10%);
   text-align: center;
 }
@@ -788,7 +783,6 @@ body {
 }
 
 .contact {
-  background-color: #f8f9fc;
   background: linear-gradient(to bottom, #f8fafc 0%, #f2f8ff 10%);
   color: #111;
   padding: 4rem 2rem;
