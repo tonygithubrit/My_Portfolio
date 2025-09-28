@@ -82,20 +82,35 @@ body {
   align-items: center;
   justify-content: center;
   padding: 100px 20px;
-  /* background: linear-gradient(135deg, #4b6cb7, #182848); */
   background: linear-gradient(135deg, #0d1b2a, #253756, #076fe7);
+  background: linear-gradient( #253756, #076fe7);
   color: #fff;
   text-align: center;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero h2 {
   font-size: 3rem;
   margin-bottom: 10px;
+  animation: fadeSlideIn 0.5s ease-out forwards;
+  opacity: 0; /* hidden before animation */
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  animation: fadeSlideIn 1.0s ease-out forwards;
+  opacity: 0; /* hidden before animation */
 }
 
 .hero-contact {
@@ -121,7 +136,16 @@ body {
   position: relative;
   display: inline-block;
   margin-top: 20px;
+  animation: fadeSlideIn 1.5s ease-out forwards;
+  opacity: 0; /* hidden before animation */
+  /* animation: float 3s ease-in-out infinite; */
 }
+
+/* @keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+} */
 
 /* Button Style */
 .btn {
@@ -184,7 +208,8 @@ body {
 /* About Section */
 .about {
   padding: 80px 20px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background: linear-gradient(to bottom, #076fe7 0%, #ffffff 10%);
   color: #333;
 }
 
@@ -273,7 +298,8 @@ body {
 
 .skills {
   padding: 80px 20px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
+  background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 10%);
   color: #333;
   text-align: center;
 }
@@ -314,6 +340,7 @@ body {
 .experience {
   padding: 80px 20px;
   background-color: #f5f7fa;
+  background: linear-gradient(to bottom, #f9f9f9 0%, #f5f7fa 10%);
   color: #333;
   text-align: center;
 }
@@ -357,7 +384,8 @@ body {
 
 .projects {
   padding: 80px 20px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
+  background: linear-gradient(to bottom, #f5f7fa 0%, #f9f9f9 10%);
   text-align: center;
   color: #182848;
 }
@@ -433,6 +461,7 @@ body {
   color: #182848;
   text-align: left;
   max-width: 900px;
+  border-radius: 10px;
   margin: 0 auto;
 }
 
@@ -465,6 +494,7 @@ body {
 .education {
   padding: 80px 20px;
   background-color: #f9f9fb;
+  /* background: linear-gradient(to bottom, #ffffff 0%, #f9f9fb 10%); */
   color: #182848;
   max-width: 900px;
   margin: 0 auto;
@@ -576,6 +606,7 @@ body {
 .hire {
   padding: 50px 20px;
   background-color: #fdfdfd;
+  background: linear-gradient(to bottom, #f9f9fb 0%, #fdfdfd 10%);
   text-align: center;
 }
 
@@ -632,7 +663,7 @@ body {
 
 .testimonials {
   padding: 60px 20px;
-  background-color: #f8fafc;
+   background: linear-gradient(to bottom, #fdfdfd 0%, #f8fafc 10%);
 }
 
 .testimonials h2 {
@@ -758,6 +789,7 @@ body {
 
 .contact {
   background-color: #f8f9fc;
+  background: linear-gradient(to bottom, #f8fafc 0%, #f2f8ff 10%);
   color: #111;
   padding: 4rem 2rem;
   text-align: center;
@@ -853,5 +885,18 @@ textarea::placeholder {
   text-align: center;
   padding: 5px;
   font-size: 0.85rem;
-  margin-top: 50px;
 }
+
+.fade-slide {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.2s ease-out;
+}
+
+.fade-slide.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
